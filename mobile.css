@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+    .cen h1 {
+        font-size: 2rem;
+    }
+
+    .top {
+        padding-left: 1rem;
+    }
+    .top h1 {
+        font-size: 1.5rem;
+    }
+    .top h2 {
+        font-size: 1rem;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .content {
+        margin: 2rem 0;
+    }
+
+    .content .item h1 {
+        font-size: 1.5rem;
+    }
+    .content .item h2 {
+        font-size: 1rem;
+    }
+    .content .item .left, .content .item .right {
+        margin: 0 2.5%;
+        width: 95%;
+    }
+    .content .item button {
+        font-size: 1rem;
+        width: 100%;
+        margin-top: .5rem;
+    }
+}
