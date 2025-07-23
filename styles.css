@@ -90,7 +90,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    animation: content-intro 1s ease-in-out;
 }
 
 .content .item {
@@ -100,6 +99,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 95%;
+    animation: content-intro 1s ease-in-out;
+}
+.content .midori {
+    animation-delay: 10s;
+    animation: content-intro 1s ease-in-out;
 }
 .content .item h1, .content .item h2 {
     width: 100%;
@@ -121,6 +125,14 @@ body {
 .content .item button:hover {
     background-color: #ff9dff;
     cursor: pointer;
+}
+
+.midori .right button {
+    color: white;
+    background-color: rgb(18,138,250);
+}
+.midori .right button:hover {
+    background-color: rgb(18,138,250,.493);
 }
 
 @keyframes content-intro {
@@ -148,4 +160,24 @@ footer {
     bottom: 1rem;
     text-align: center;
     width: 100%;
+}
+
+@keyframes caret-blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.caret {
+    animation: 1s caret-blink infinite;
+    position: relative;
+    bottom: 4px;
 }

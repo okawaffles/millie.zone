@@ -18,4 +18,13 @@ $(document).ready(() => {
             window.location = '/goodluckle';
         }, 1500);
     });
+
+    $('#midori').on('click', () => {
+        $('#splash').text('Kuyashii!');
+        $('#init').css('display', 'flex');
+        $('#after').css('display', 'none');
+        setTimeout(() => {
+            window.location = '/blue-archival';
+        }, 1500);
+    });
 });
